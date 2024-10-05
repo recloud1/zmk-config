@@ -40,9 +40,19 @@
             key-positions = <12 23>;
         };
 
-        meh_left_combo {
-            bindings = <&meh>;
-            key-positions = <36>;
+        equal {
+            bindings = <&equal>;
+            key-positions = <19 16>;
+        };
+
+        plus {
+            bindings = <&plus>;
+            key-positions = <19 17>;
+        };
+
+        minus {
+            bindings = <&minus>;
+            key-positions = <19 15>;
         };
     };
 
@@ -59,6 +69,34 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_SHIFT &kp LEFT_GUI>;
             label = "NEW_MACRO";
+        };
+
+        equal: equal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp KP_EQUAL &kp SPACE>;
+            label = "EQUAL";
+        };
+
+        increment: increment {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp KP_PLUS &kp KP_EQUAL &kp SPACE>;
+            label = "INCREMENT";
+        };
+
+        plus: plus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp KP_PLUS &kp SPACE>;
+            label = "PLUS";
+        };
+
+        minus: minus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp KP_MINUS &kp SPACE>;
+            label = "MINUS";
         };
     };
 
