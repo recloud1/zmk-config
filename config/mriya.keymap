@@ -31,8 +31,13 @@
         };
 
         sleep {
-            bindings = <&kp K_LOCK>;
+            bindings = <&kp K_SLEEP>;
             key-positions = <0 11>;
+        };
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <12 23>;
         };
     };
 
