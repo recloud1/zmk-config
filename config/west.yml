@@ -9,7 +9,7 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: mouse
+    - name: zmk
       remote: krikun98
       revision: mouse-pr
       import: app/west.yml
