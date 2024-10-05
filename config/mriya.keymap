@@ -54,6 +54,11 @@
             bindings = <&minus>;
             key-positions = <19 15>;
         };
+
+        change_language {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <41 38>;
+        };
     };
 
     macros {
