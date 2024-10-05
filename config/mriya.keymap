@@ -45,7 +45,7 @@
         right_arrow: right_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GT>;
+            bindings = <&kp MINUS &kp GT &kp SPACE>;
             label = "RIGHT_ARROW";
         };
     };
