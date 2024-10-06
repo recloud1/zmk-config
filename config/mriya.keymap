@@ -13,9 +13,7 @@
 #define RSE 2
 #define ADJ 3
 
-&lt {
-    quick_tap_ms = <200>;
-};
+&lt { quick_tap_ms = <200>; };
 
 &mt {
     quick-tap-ms = <125>;
@@ -28,7 +26,7 @@
 
         right_arrow {
             bindings = <&right_arrow>;
-            key-positions = <12 33>;
+            key-positions = <33 13>;
         };
 
         sleep {
