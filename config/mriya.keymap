@@ -32,7 +32,7 @@
 
         right_arrow {
             bindings = <&right_arrow>;
-            key-positions = <12 33>;
+            key-positions = <33 13>;
         };
 
         sleep {
