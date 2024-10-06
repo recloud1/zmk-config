@@ -30,14 +30,79 @@
             bindings = <&right_arrow>;
             key-positions = <12 33>;
         };
+
+        sleep {
+            bindings = <&kp K_SLEEP>;
+            key-positions = <0 11>;
+        };
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <12 23>;
+        };
+
+        equal {
+            bindings = <&equal>;
+            key-positions = <19 16>;
+        };
+
+        plus {
+            bindings = <&plus>;
+            key-positions = <19 17>;
+        };
+
+        minus {
+            bindings = <&minus>;
+            key-positions = <19 15>;
+        };
+
+        change_language {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <41 38>;
+        };
     };
 
     macros {
         right_arrow: right_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GT>;
+            bindings = <&kp MINUS &kp GT &kp SPACE>;
             label = "RIGHT_ARROW";
+        };
+
+        meh: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_SHIFT &kp LEFT_GUI>;
+            label = "NEW_MACRO";
+        };
+
+        equal: equal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp KP_EQUAL &kp SPACE>;
+            label = "EQUAL";
+        };
+
+        increment: increment {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp KP_PLUS &kp KP_EQUAL &kp SPACE>;
+            label = "INCREMENT";
+        };
+
+        plus: plus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp KP_PLUS &kp SPACE>;
+            label = "PLUS";
+        };
+
+        minus: minus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp KP_MINUS &kp SPACE>;
+            label = "MINUS";
         };
     };
 
