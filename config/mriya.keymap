@@ -65,8 +65,8 @@
             key-positions = <19 20>;
         };
 
-        lpar {
-            bindings = <&kp LPAR>;
+        rpar {
+            bindings = <&kp RPAR>;
             key-positions = <20 21>;
         };
 
