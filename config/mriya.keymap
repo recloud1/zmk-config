@@ -16,7 +16,7 @@
 #define RSE 2
 #define ADJ 3
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 60
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1600
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1400
 
 &lt { quick_tap_ms = <200>; };
 
