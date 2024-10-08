@@ -15,7 +15,6 @@
 #define LWR 1
 #define RSE 2
 #define ADJ 3
-
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 50
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1400
 
@@ -27,11 +26,10 @@
 };
 
 &mmv {
-  acceleration-exponent = <1>;      // 1
-  time-to-max-speed-ms = <1000>;    // 40
-  delay-ms = <0>;                   // 0
+    acceleration-exponent = <1>;      // 1
+    time-to-max-speed-ms = <1000>;    // 40
+    delay-ms = <0>;                   // 0
 };
-
 
 / {
     combos {
@@ -80,6 +78,16 @@
         change_language {
             bindings = <&kp CAPSLOCK>;
             key-positions = <41 38>;
+        };
+
+        plus_symbol {
+            bindings = <&kp KP_PLUS>;
+            key-positions = <19 7>;
+        };
+
+        minus_symbol {
+            bindings = <&kp KP_MINUS>;
+            key-positions = <19 31>;
         };
     };
 
@@ -156,10 +164,10 @@
 
         mouse_layer {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans  &trans    &none           &none                   &mmv MOVE_UP        &none                  &msc SCRL_UP  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans    &none           &mmv MOVE_LEFT          &mmv MOVE_DOWN      &mmv MOVE_RIGHT        &msc SCRL_DOWN  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans    &trans          &msc SCRL_LEFT                   &none      &msc SCRL_RIGHT        &trans  &trans
-                  &trans  &trans  &trans  &trans    &mkp MB3        &mkp MB1         &mkp MB2        &trans
+  &trans  &trans  &trans  &trans  &trans  &trans    &none     &none           &mmv MOVE_UP    &none            &msc SCRL_UP    &trans
+  &trans  &trans  &trans  &trans  &trans  &trans    &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &trans          &trans
+                  &trans  &trans  &trans  &trans    &mkp MB3  &mkp MB1        &mkp MB2        &trans
             >;
         };
 
