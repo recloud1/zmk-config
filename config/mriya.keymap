@@ -99,6 +99,11 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <32 33>;
         };
+
+        equal_sign {
+            bindings = <&kp KP_EQUAL>;
+            key-positions = <16 15>;
+        };
     };
 
     macros {
