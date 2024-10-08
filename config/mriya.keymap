@@ -15,7 +15,7 @@
 #define LWR 1
 #define RSE 2
 #define ADJ 3
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 60
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 40
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1400
 
 &lt { quick_tap_ms = <200>; };
@@ -126,13 +126,6 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS &kp GT &kp SPACE>;
             label = "RIGHT_ARROW";
-        };
-
-        meh: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_SHIFT &kp LEFT_GUI>;
-            label = "NEW_MACRO";
         };
 
         equal: equal {
