@@ -166,7 +166,14 @@
         copy: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCMD &kp C>;
+            bindings =
+                <&macro_press>,
+                <&kp LCMD>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LCMD>;
+
             label = "COPY";
         };
 
