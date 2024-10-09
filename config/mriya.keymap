@@ -75,7 +75,7 @@
         };
 
         minus_symbol {
-            bindings = <&kp MINUS>;
+            bindings = <&kp KP_MINUS>;
             key-positions = <19 31>;
         };
 
