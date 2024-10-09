@@ -111,7 +111,7 @@
 
         under {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <18 30>;
+            key-positions = <28 16>;
         };
 
         caret {
@@ -166,32 +166,35 @@
                 <&kp C>,
                 <&macro_release>,
                 <&kp LCMD>;
+
             label = "COPY";
         };
 
         paste: paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
+            bindings =
                 <&macro_press>,
                 <&kp LCMD>,
                 <&macro_tap>,
                 <&kp V>,
                 <&macro_release>,
                 <&kp LCMD>;
+
             label = "PASTE";
         };
 
         cut: cut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
+            bindings =
                 <&macro_press>,
                 <&kp LCMD>,
                 <&macro_tap>,
                 <&kp X>,
                 <&macro_release>,
                 <&kp LCMD>;
+
             label = "CUT";
         };
     };
