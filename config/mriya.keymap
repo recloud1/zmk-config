@@ -252,7 +252,7 @@
 
         lower_layer {
             bindings = <
-  &kp GRAVE  &kp F1  &kp F2    &kp F3      &kp F5       &none        &kp F6     &kp F7  &kp F8     &kp F9  &kp F10  &none
+  &kp GRAVE  &kp F1  &kp F2    &kp F3      &kp F5       &none        &kp F6     &kp F7  &kp F8     &kp F9  &kp F10  &kp LEFT_BRACKET
   &kp EXCL   &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp MINUS    &kp CARET  &none   &none      &none   &none    &kp APOSTROPHE
   &trans     &kp N1  &kp N2    &kp N3      &kp N4       &kp N5       &kp N6     &kp N7  &kp N8     &kp N9  &kp N0   &none
                      &trans    &lt 4 TAB   &trans       &trans       &trans     &trans  &lt 4 DEL  &none
