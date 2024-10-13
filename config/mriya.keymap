@@ -133,6 +133,36 @@
             bindings = <&kp KP_DIVIDE>;
             key-positions = <20 32>;
         };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <17 5>;
+        };
+
+        tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <17 29>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <15 3>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <15 27>;
+        };
+
+        at {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <2 14>;
+        };
+
+        gravis {
+            bindings = <&kp GRAVE>;
+            key-positions = <13 25>;
+        };
     };
 
     macros {
