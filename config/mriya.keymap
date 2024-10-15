@@ -21,7 +21,7 @@
 &lt { quick_tap_ms = <200>; };
 
 &mmv {
-  acceleration-exponent = <0.5>;
+  acceleration-exponent = <1>;
   time-to-max-speed-ms = <1300>;
   delay-ms = <0>
 }
