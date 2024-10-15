@@ -20,12 +20,6 @@
 
 &lt { quick_tap_ms = <200>; };
 
-&mmv {
-  acceleration-exponent = <1>;
-  time-to-max-speed-ms = <1300>;
-  delay-ms = <0>;
-};
-
 &mt {
     quick-tap-ms = <125>;
     tapping-term-ms = <300>;
