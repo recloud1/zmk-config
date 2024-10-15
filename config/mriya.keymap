@@ -24,7 +24,7 @@
   acceleration-exponent = <1>;
   time-to-max-speed-ms = <1300>;
   delay-ms = <0>;
-}
+};
 
 &mt {
     quick-tap-ms = <125>;
