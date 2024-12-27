@@ -76,7 +76,8 @@
 
         minus_symbol {
             bindings = <&kp KP_SUBTRACT>;
-            key-positions = <19 31>;
+            key-positions = <30 31>;
+            // key-positions = <19 31>;
         };
 
         bracket {
