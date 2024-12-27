@@ -76,8 +76,7 @@
 
         minus_symbol {
             bindings = <&kp KP_SUBTRACT>;
-            key-positions = <30 31>;
-            // key-positions = <19 31>;
+            key-positions = <19 31>;
         };
 
         bracket {
@@ -163,6 +162,11 @@
         gravis {
             bindings = <&kp GRAVE>;
             key-positions = <13 25>;
+        };
+
+        ground {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <18 30>;
         };
     };
 
