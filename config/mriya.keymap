@@ -374,10 +374,10 @@
 
         mouse_layer {
             bindings = <
-  &kp F1   &kp F2   &kp F3    &kp F4   &kp F5    &kp F6     &none     &none           &mmv MOVE_UP    &none            &msc SCRL_UP    &none
-  &kp F7   &kp F8   &kp F9    &kp F10  &kp F11   &kp F12    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &none
-  &kp F13  &kp F14  &kp F15   &kp F16  &kp F17   &kp F18    &none     &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none           &none
-                    &trans  &none  &none  &none             &mkp MB3  &mkp MB1        &mkp MB2        &none
+  &kp F1   &kp F2   &kp F3    &kp F4   &kp F5    &kp F6     &none           &none           &mmv MOVE_UP        &none               &msc SCRL_UP    &none
+  &kp F7   &kp F8   &kp F9    &kp F10  &kp F11   &kp F12    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &msc SCRL_DOWN      &none           &none
+  &kp F13  &kp F14  &kp F15   &kp F16  &kp F17   &kp F18    &none           &msc SCRL_LEFT  &none               &msc SCRL_RIGHT     &none           &none
+                    &trans  &none  &none  &none             &mkp MB3        &mkp MB1        &mkp MB2            &none
             >;
         };
 
