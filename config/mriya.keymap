@@ -205,6 +205,13 @@
             label = "RIGHT_ARROW";
         };
 
+        right_arrow_with_spaces: right_arrow_with_spaces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp MINUS &kp GT &kp SPACE>;
+            label = "RIGHT_ARROW_WITH_SPACES";
+        };
+
         equal_with_spaces: equal_with_spaces {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -275,7 +282,7 @@
         return: return {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp GT>;
+            bindings = <&kp SPACE &kp EQUAL &kp GT &kp SPACE>;
             label = "RETURN";
         };
 
@@ -427,9 +434,9 @@
 
         additional_combos_layer {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans          &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &return &right_arrow    &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans          &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans                      &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &return &right_arrow_with_spaces    &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans                      &trans  &trans  &trans
 
                   &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans
             >;
