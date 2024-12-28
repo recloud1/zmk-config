@@ -171,7 +171,7 @@
         };
 
         activate_default {
-            bindings = <&to 0>;
+            bindings = <&activate_default>;
             key-positions = <41 38>;
             layers = <6>;
         };
@@ -356,6 +356,13 @@
             #binding-cells = <0>;
             bindings = <&to 6 &kp CAPSLOCK>;
             label = "ACTIVATE_RUSSIAN";
+        };
+
+        activate_default: activate_default {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp CAPSLOCK>;
+            label = "ACTIVATE_DEFAULT";
         };
     };
 
