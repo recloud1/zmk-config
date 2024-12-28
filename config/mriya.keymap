@@ -321,7 +321,7 @@
         hyper: hyper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&hmr LS(LA(LC(LEFT_GUI))) ESCAPE>, <&macro_release>;
+            bindings = <&hmr LS(LA(LC(LEFT_GUI))) ESCAPE>;
 
             label = "TEST_MACRO";
         };
