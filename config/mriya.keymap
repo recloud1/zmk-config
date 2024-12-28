@@ -359,8 +359,8 @@
 
         default_layer {
             bindings = <
-  &hyper          &kp Q                &kp W            &kp E            &kp R              &kp T        &kp Y         &kp U               &kp I             &kp O             &kp P                    &none
-  &kp UNDERSCORE  &hmr LEFT_CONTROL A  &hmr LEFT_ALT S  &hmr LEFT_GUI D  &hmr LEFT_SHIFT F  &kp G        &kp H         &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMI  &kp DOUBLE_QUOTES
+  &hyper          &kp Q                &kp W            &kp E            &kp R              &kp T        &kp Y         &kp U               &kp I             &kp O             &kp P                    &hyper
+  &meh  &hmr LEFT_CONTROL A  &hmr LEFT_ALT S  &hmr LEFT_GUI D  &hmr LEFT_SHIFT F  &kp G        &kp H         &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMI  &kp DOUBLE_QUOTES
   &trans          &kp Z                &kp X            &kp C            &kp V              &kp B        &kp N         &kp M               &kp COMMA         &kp DOT           &kp QUESTION             &kp BSLH
                                        &tog 1           &lt 3 TAB        &lt 2 SPACE        &lt 1 RET    &lt 0 ESCAPE  &lt 2 RETURN        &lt 3 BACKSPACE   &tog 3
             >;
@@ -368,10 +368,10 @@
 
         mouse_layer {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans  &trans    &none     &none           &mmv MOVE_UP    &none            &msc SCRL_UP    &trans
-  &trans  &trans  &trans  &trans  &trans  &trans    &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &trans          &trans
-                  &trans  &trans  &trans  &trans    &mkp MB3  &mkp MB1        &mkp MB2        &trans
+  &none  &none  &none  &none  &none  &none    &none     &none           &mmv MOVE_UP    &none            &msc SCRL_UP    &none
+  &none  &none  &none  &none  &none  &none    &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &none
+  &none  &none  &none  &none  &none  &none    &none    &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none          &none
+                  &none  &none  &none  &none    &mkp MB3  &mkp MB1        &mkp MB2        &none
             >;
         };
 
