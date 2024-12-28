@@ -10,6 +10,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
 #define LWR 1
@@ -64,10 +67,9 @@
             key-positions = <20 21>;
         };
 
-        activate_russian {
-            bindings = <&activate_russian>;
+        change_language {
+            bindings = <&kp CAPSLOCK>;
             key-positions = <41 38>;
-            layers = <0>;
         };
 
         plus_symbol {
@@ -168,12 +170,6 @@
         ground {
             bindings = <&kp UNDERSCORE>;
             key-positions = <18 30>;
-        };
-
-        activate_default {
-            bindings = <&activate_default>;
-            key-positions = <41 38>;
-            layers = <6>;
         };
     };
 
