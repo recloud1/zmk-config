@@ -37,136 +37,163 @@
         caps_word {
             bindings = <&caps_word>;
             key-positions = <12 23>;
+            layers = <0>;
         };
 
-        equal {
-            bindings = <&equal>;
+        equal_with_spaces {
+            bindings = <&equal_with_spaces>;
             key-positions = <19 16>;
+            layers = <0>;
         };
 
-        plus {
-            bindings = <&plus>;
+        plus_with_spaces {
+            bindings = <&plus_with_spaces>;
             key-positions = <19 17>;
+            layers = <0>;
         };
 
-        minus {
-            bindings = <&minus>;
+        minus_with_spaces {
+            bindings = <&minus_with_spaces>;
             key-positions = <19 15>;
+            layers = <0>;
         };
 
         lpar {
             bindings = <&kp LPAR>;
             key-positions = <19 20>;
+            layers = <0>;
         };
 
         rpar {
             bindings = <&kp RPAR>;
             key-positions = <20 21>;
+            layers = <0>;
         };
 
         change_language {
             bindings = <&kp CAPSLOCK>;
             key-positions = <41 38>;
+            layers = <0>;
         };
 
         plus_symbol {
             bindings = <&kp KP_PLUS>;
             key-positions = <19 7>;
+            layers = <0>;
         };
 
         minus_symbol {
             bindings = <&kp KP_SUBTRACT>;
             key-positions = <19 31>;
+            layers = <0>;
         };
 
         bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <32 31>;
+            layers = <0>;
         };
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <32 33>;
+            layers = <0>;
         };
 
         equal_sign {
             bindings = <&kp KP_EQUAL>;
             key-positions = <16 15>;
+            layers = <0>;
         };
 
         copy {
             bindings = <&copy>;
             key-positions = <26 27>;
+            layers = <0>;
         };
 
         paste {
             bindings = <&paste>;
             key-positions = <27 28>;
+            layers = <0>;
         };
 
         cut {
             bindings = <&cut>;
             key-positions = <28 26>;
+            layers = <0>;
         };
 
         caret {
             bindings = <&kp CARET>;
             key-positions = <18 6>;
+            layers = <0>;
         };
 
         and_ {
             bindings = <&kp AMPERSAND>;
             key-positions = <21 9>;
+            layers = <0>;
         };
 
         or_ {
             bindings = <&kp PIPE>;
             key-positions = <21 33>;
+            layers = <0>;
         };
 
         mult {
             bindings = <&kp KP_MULTIPLY>;
             key-positions = <20 8>;
+            layers = <0>;
         };
 
         div {
             bindings = <&kp KP_DIVIDE>;
             key-positions = <20 32>;
+            layers = <0>;
         };
 
         percent {
             bindings = <&kp PERCENT>;
             key-positions = <17 5>;
+            layers = <0>;
         };
 
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <17 29>;
+            layers = <0>;
         };
 
         hash {
             bindings = <&kp HASH>;
             key-positions = <15 3>;
+            layers = <0>;
         };
 
         backslash {
             bindings = <&kp BACKSLASH>;
             key-positions = <15 27>;
+            layers = <0>;
         };
 
         at {
             bindings = <&kp AT_SIGN>;
             key-positions = <2 14>;
+            layers = <0>;
         };
 
         gravis {
             bindings = <&kp GRAVE>;
             key-positions = <13 25>;
+            layers = <0>;
         };
 
         ground {
             bindings = <&kp UNDERSCORE>;
             key-positions = <18 30>;
+            layers = <0>;
         };
     };
 
@@ -174,36 +201,36 @@
         right_arrow: right_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GT &kp SPACE>;
+            bindings = <&kp MINUS &kp GT>;
             label = "RIGHT_ARROW";
         };
 
-        equal: equal {
+        equal_with_spaces: equal_with_spaces {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SPACE &kp KP_EQUAL &kp SPACE>;
-            label = "EQUAL";
+            label = "EQUAL_WITH_SPACES";
         };
 
-        increment: increment {
+        increment_with_spaces: increment_with_spaces {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SPACE &kp KP_PLUS &kp KP_EQUAL &kp SPACE>;
-            label = "INCREMENT";
+            label = "INCREMENT_WITH_SPACES";
         };
 
-        plus: plus {
+        plus_with_spaces: plus_with_spaces {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SPACE &kp KP_PLUS &kp SPACE>;
-            label = "PLUS";
+            label = "PLUS_WITH_SPACES";
         };
 
-        minus: minus {
+        minus_with_spaces: minus_with_spaces {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SPACE &kp KP_MINUS &kp SPACE>;
-            label = "MINUS";
+            label = "MINUS_WITH_SPACES";
         };
 
         copy: copy {
@@ -216,7 +243,6 @@
                 <&kp C>,
                 <&macro_release>,
                 <&kp LCMD>;
-
             label = "COPY";
         };
 
@@ -230,7 +256,6 @@
                 <&kp V>,
                 <&macro_release>,
                 <&kp LCMD>;
-
             label = "PASTE";
         };
 
@@ -244,15 +269,7 @@
                 <&kp X>,
                 <&macro_release>,
                 <&kp LCMD>;
-
             label = "CUT";
-        };
-
-        hint: hint {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GT>;
-            label = "HINT";
         };
 
         return: return {
@@ -262,11 +279,11 @@
             label = "RETURN";
         };
 
-        not: not {
+        not_by_excl: not_by_excl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp EXCL &kp EQUAL>;
-            label = "NOT";
+            label = "NOT_BY_EXCL";
         };
 
         inc: inc {
@@ -304,11 +321,11 @@
             label = "WALRUS";
         };
 
-        or: rust_namespace {
+        or_pipes: or_pipes {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp PIPE &kp PIPE>;
-            label = "RUST_NAMESPACE";
+            label = "OR_PIPES";
         };
 
         and: and {
@@ -365,10 +382,10 @@
 
         default_layer {
             bindings = <
-  &hyper  &kp Q                &kp W            &kp E            &kp R              &kp T        &kp Y         &kp U               &kp I             &kp O             &kp P                    &hyper
-  &meh    &hmr LEFT_CONTROL A  &hmr LEFT_ALT S  &hmr LEFT_GUI D  &hmr LEFT_SHIFT F  &kp G        &kp H         &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMI  &kp DOUBLE_QUOTES
-  &trans  &kp Z                &kp X            &kp C            &kp V              &kp B        &kp N         &kp M               &kp COMMA         &kp DOT           &hmr EXCL QUESTION       &kp BSLH
-                               &lt 1 ESCAPE           &lt 3 TAB        &lt 2 SPACE        &lt 1 RET    &lt 0 ESCAPE  &lt 2 RETURN        &lt 3 BACKSPACE   &lt 1 ESCAPE
+  &hyper  &kp Q                &kp W                &kp E            &kp R              &kp T        &kp Y         &kp U               &kp I             &kp O             &kp P                    &hyper
+  &meh    &hmr LEFT_CONTROL A  &hmr LEFT_ALT S      &hmr LEFT_GUI D  &hmr LEFT_SHIFT F  &kp G        &kp H         &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMI  &kp DOUBLE_QUOTES
+  &trans  &kp Z                &kp X                &kp C            &kp V              &kp B        &kp N         &kp M               &kp COMMA         &kp DOT           &hmr EXCL QUESTION       &kp BSLH
+                               &lt 1 ESCAPE         &lt 3 TAB        &lt 2 SPACE        &lt 5 RET    &lt 5 ESCAPE  &lt 2 RETURN        &lt 3 BACKSPACE   &lt 1 ESCAPE
             >;
         };
 
@@ -383,10 +400,10 @@
 
         lower_layer {
             bindings = <
-  &kp GRAVE  &kp F1  &kp F2    &kp F3      &kp F5       &none        &kp F6     &kp F7  &kp F8     &kp F9  &kp F10  &none
-  &kp EXCL   &none  &none  &kp DOLLAR  &kp PERCENT  &kp MINUS        &none      &none   &none      &none   &none    &kp APOSTROPHE
-  &trans     &kp N1  &kp N2    &kp N3      &kp N4       &kp N5       &kp N6     &kp N7  &kp N8     &kp N9  &kp N0   &none
-                     &trans    &lt 4 TAB   &trans       &trans       &trans     &trans  &lt 4 DEL  &none
+  &kp GRAVE  &none   &none      &none       &none        &none        &none     &none   &none      &none   &none    &none
+  &none      &none   &none      &kp DOLLAR  &none        &kp MINUS    &none     &none   &none      &none   &none    &kp APOSTROPHE
+  &trans     &kp N1  &kp N2     &kp N3      &kp N4       &kp N5       &kp N6    &kp N7  &kp N8     &kp N9  &kp N0   &none
+                     &trans     &lt 4 TAB   &trans       &trans       &trans    &trans  &lt 4 DEL  &none
             >;
         };
 
@@ -408,12 +425,13 @@
             >;
         };
 
-        applications {
+        additional_combos_layer {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans          &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &return &right_arrow    &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans          &trans  &trans  &trans
+
+                  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans
             >;
         };
     };
