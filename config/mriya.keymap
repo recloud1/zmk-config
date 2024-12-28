@@ -10,9 +10,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
 #define LWR 1
@@ -36,11 +33,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        sleep {
-            bindings = <&kp K_SLEEP>;
-            key-positions = <0 11>;
-        };
 
         caps_word {
             bindings = <&caps_word>;
@@ -326,7 +318,7 @@
             label = "AND";
         };
 
-        hyper: test_macro {
+        hyper: hyper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press>, <&hmr LS(LA(LC(LEFT_GUI))) ESCAPE>;
