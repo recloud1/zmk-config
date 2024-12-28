@@ -52,8 +52,8 @@
             layers = <0>;
         };
 
-        return_with_spaces {
-            bindings = <&return_with_spaces>;
+        return {
+            bindings = <&return>;
             key-positions = <38 20>;
             layers = <0>;
         };
