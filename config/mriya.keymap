@@ -389,10 +389,11 @@
 
         default_layer {
             bindings = <
-  &hyper  &kp Q                &kp W                &kp E            &kp R              &kp T        &kp Y         &kp U               &kp I             &kp O             &kp P                    &hyper
-  &meh    &hmr LEFT_CONTROL A  &hmr LEFT_ALT S      &hmr LEFT_GUI D  &hmr LEFT_SHIFT F  &kp G        &kp H         &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMI  &kp DOUBLE_QUOTES
-  &trans  &kp Z                &kp X                &kp C            &kp V              &kp B        &kp N         &kp M               &kp COMMA         &kp DOT           &hmr EXCL QUESTION       &kp BSLH
-                               &lt 1 ESCAPE         &lt 3 TAB        &lt 2 SPACE        &lt 5 RET    &lt 5 ESCAPE  &lt 2 RETURN        &lt 3 BACKSPACE   &lt 1 ESCAPE
+  &hyper  &kp Q                &kp W                &kp E            &kp R              &kp T            &kp Y         &kp U               &kp I             &kp O             &kp P                    &hyper
+  &meh    &hmr LEFT_CONTROL A  &hmr LEFT_ALT S      &hmr LEFT_GUI D  &hmr LEFT_SHIFT F  &kp G            &kp H         &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMI  &kp DOUBLE_QUOTES
+  &trans  &kp Z                &kp X                &kp C            &kp V              &kp B            &kp N         &kp M               &kp COMMA         &kp DOT           &hmr EXCL QUESTION       &kp BSLH
+
+                               &lt 1 ESCAPE         &lt 3 TAB        &lt 5 SPACE        &lt 2 RET        &lt 2 ESCAPE  &lt 5 RETURN        &lt 3 BACKSPACE   &lt 1 ESCAPE
             >;
         };
 
