@@ -62,10 +62,13 @@
         COMBO(paste, &paste, <27 28>, <0>, COMBO_TERM_LONG)
         COMBO(cut, &cut, <26 28>, <0>, COMBO_TERM_LONG)
         COMBO(caret, &kp CARET, <6 18>, <0>, COMBO_TERM_LONG)
+
         COMBO(and_, &kp AMPERSAND, <9 21>, <0>, COMBO_TERM_LONG)
-        COMBO(or_, &kp PIPE, <21 23>, <0>, COMBO_TERM_LONG)
+        COMBO(or_, &kp PIPE, <21 33>, <0>, COMBO_TERM_LONG)
+
         COMBO(mult, &kp KP_MULTIPLY, <8 20>, <0>, COMBO_TERM_LONG)
         COMBO(div, &kp KP_DIVIDE, <20 32>, <0>, COMBO_TERM_LONG)
+
         COMBO(percent, &kp PERCENT, <5 17>, <0>, COMBO_TERM_LONG)
         COMBO(tilde, &kp TILDE, <17 29>, <0>, COMBO_TERM_LONG)
         COMBO(hash, &kp HASH, <3 15>, <0>, COMBO_TERM_LONG)
