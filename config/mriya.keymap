@@ -62,7 +62,7 @@
         COMBO(paste, &paste, <27 28>, <0>, COMBO_TERM_LONG)
         COMBO(cut, &cut, <26 28>, <0>, COMBO_TERM_LONG)
         COMBO(caret, &kp CARET, <6 18>, <0>, COMBO_TERM_LONG)
-        COMBO(and_, &kp AMPERSAND, <9 21>, <0>, COMBO_TERM_LONG)
+        COMBO(and_, &kp KP_AMPERSAND, <9 21>, <0>, COMBO_TERM_LONG)
         COMBO(or_, &kp PIPE, <21 23>, <0>, COMBO_TERM_LONG)
         COMBO(mult, &kp KP_MULTIPLY, <8 20>, <0>, COMBO_TERM_LONG)
         COMBO(div, &kp KP_DIVIDE, <20 32>, <0>, COMBO_TERM_LONG)
@@ -73,8 +73,6 @@
         COMBO(at, &kp AT_SIGN, <2 14>, <0>, COMBO_TERM_LONG)
         COMBO(gravis, &kp GRAVE, <13 25>, <0>, COMBO_TERM_LONG)
         COMBO(ground, &kp UNDERSCORE, <18 30>, <0>, COMBO_TERM_LONG)
-        COMBO(dot, &kp KP_DOT, <33 38>, <0>, COMBO_TERM_LONG)
-        COMBO(comma, &kp KP_COMMA, <32 38>, <0>, COMBO_TERM_LONG)
         COMBO(excl, &kp EXCL, <1 13>, <0>, COMBO_TERM_LONG)
     };
 
