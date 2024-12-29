@@ -54,7 +54,7 @@
 
         COMBO(minus_with_spaces, &minus_with_spaces, <15 19>, <0>, COMBO_TERM_LONG)
 
-        COMBO(lpar, &kp KP_LPAR, <19 20>, <0>, COMBO_TERM_LONG)
+        COMBO(lpar, &kp LPAR, <19 20>, <0>, 0)
         COMBO(rpar, &kp RPAR, <20 21>, <0>, COMBO_TERM_LONG)
 
         COMBO(change_language, &kp CAPSLOCK, <38 41>, <0>, COMBO_TERM_LONG)
