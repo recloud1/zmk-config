@@ -105,7 +105,7 @@
             layers = <0>;
         };
 
-        COMBO(plus_symbol, 7 19, 0, COMBO_TERM_LONG)
+        COMBO(plus_symbol, &kp PLUS, 7 19, 0, COMBO_TERM_LONG)
 
         minus_symbol {
             bindings = <&kp KP_SUBTRACT>;
