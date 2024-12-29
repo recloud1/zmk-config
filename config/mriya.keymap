@@ -211,16 +211,19 @@
         dot {
             bindings = <&kp DOT>;
             key-positions = <38 33>;
+            layers = <0>;
         };
 
         comma {
             bindings = <&kp COMMA>;
             key-positions = <38 32>;
+            layers = <0>;
         };
 
         excl {
             bindings = <&kp EXCL>;
             key-positions = <38 34>;
+            layers = <0>;
         };
     };
 
