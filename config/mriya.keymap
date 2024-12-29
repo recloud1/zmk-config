@@ -90,7 +90,7 @@
 
         plus_symbol {
             bindings = <&kp PLUS>;
-            key-positions = <19 7>;
+            key-positions = <7 19>;
             layers = <0>;
         };
 
