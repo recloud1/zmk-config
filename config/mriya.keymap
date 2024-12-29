@@ -207,6 +207,21 @@
             key-positions = <18 30>;
             layers = <0>;
         };
+
+        dot {
+            bindings = <&kp KP_DOT>;
+            key-positions = <38 33>;
+        };
+
+        comma {
+            bindings = <&kp KP_COMMA>;
+            key-positions = <38 32>;
+        };
+
+        excl {
+            bindings = <&kp EXCL>;
+            key-positions = <38 34>;
+        };
     };
 
     macros {
