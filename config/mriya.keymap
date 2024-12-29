@@ -51,9 +51,12 @@
         COMBO(plus_with_spaces, &plus_with_spaces, <17 19>, <0>, COMBO_TERM_LONG)
         COMBO(return, &return, <20 38>, <0>, COMBO_TERM_LONG)
         COMBO(right_arrow_with_spaces, &right_arrow_with_spaces, <19 38>, <0>, COMBO_TERM_LONG)
+
         COMBO(minus_with_spaces, &minus_with_spaces, <15 19>, <0>, COMBO_TERM_LONG)
-        COMBO(lpar, &kp LPAR, <19 20>, <0>, COMBO_TERM_LONG)
+
+        COMBO(lpar, &kp KP_LPAR, <19 20>, <0>, COMBO_TERM_LONG)
         COMBO(rpar, &kp RPAR, <20 21>, <0>, COMBO_TERM_LONG)
+
         COMBO(change_language, &kp CAPSLOCK, <38 41>, <0>, COMBO_TERM_LONG)
         COMBO(bracket, &kp LEFT_BRACKET, <31 32>, <0>, COMBO_TERM_LONG)
         COMBO(right_bracket, &kp RIGHT_BRACKET, <32 33>, <0>, COMBO_TERM_LONG)
