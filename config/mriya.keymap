@@ -44,12 +44,8 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        caps_word {
-            bindings = <&caps_word>;
-            key-positions = <12 23>;
-            layers = <0>;
-        };
+        COMBO(caps_word, &caps_word, 12 23, 0, COMBO_TERM_LONG)
+        COMBO(plus_symbol, &kp KP_PLUS, 7 19, 0, COMBO_TERM_LONG)
 
         equal_with_spaces {
             bindings = <&equal_with_spaces>;
@@ -98,14 +94,6 @@
             key-positions = <41 38>;
             layers = <0>;
         };
-
-        plus_symbol {
-            bindings = <&kp PLUS>;
-            key-positions = <7 19>;
-            layers = <0>;
-        };
-
-        COMBO(plus_symbol, &kp PLUS, 7 19, 0, COMBO_TERM_LONG)
 
         minus_symbol {
             bindings = <&kp KP_SUBTRACT>;
