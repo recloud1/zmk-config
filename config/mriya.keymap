@@ -18,6 +18,16 @@
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 40
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1800
 
+#define COMBO_TERM_LONG 51
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, MS) \
+    combo_##NAME { \
+        bindings = <BINDINGS>; \
+        key-positions = <KEYPOS>; \
+        layers = <LAYERS>; \
+        timeout-ms = <MS>; \
+    };
+
 &lt { quick_tap_ms = <200>; };
 
 &mt {
@@ -29,6 +39,7 @@
     time-to-max-speed-ms = <300>;
     acceleration-exponent = <2>;
 };
+
 
 / {
     combos {
@@ -93,6 +104,8 @@
             key-positions = <7 19>;
             layers = <0>;
         };
+
+        COMBO(plus_symbol, 7 19, 0, COMBO_TERM_LONG)
 
         minus_symbol {
             bindings = <&kp KP_SUBTRACT>;
