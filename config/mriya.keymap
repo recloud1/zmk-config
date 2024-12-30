@@ -121,6 +121,19 @@
             label = "MOVE_ON_WORD_RIGHT";
         };
 
+        remove_word: remove_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp BACKSPACE>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+            label = "REMOVE_WORD";
+        };
+
         right_arrow_with_spaces: right_arrow_with_spaces {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -331,7 +344,7 @@
 
         lower_layer {
             bindings = <
-  &none      &none   &none      &none       &none        &none          &none                  &none   &none                  &none                 &none    &none
+  &none      &none   &none      &none       &none        &none          &remove_word           &none   &none                  &none                 &none    &none
   &none      &none   &none      &none       &none        &none          &move_on_word_left     &none   &none                  &move_on_word_right   &none    &kp APOSTROPHE
   &trans     &kp N1  &kp N2     &kp N3      &kp N4       &kp N5         &kp N6                 &kp N7  &kp N8                 &kp N9                &kp N0   &none
 
