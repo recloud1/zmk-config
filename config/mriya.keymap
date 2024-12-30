@@ -95,6 +95,20 @@
             label = "RIGHT_ARROW";
         };
 
+        move_on_word_left: move_on_word_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp LEFT>;
+            label = "MOVE_ON_WORD_LEFT";
+        };
+
+        move_on_word_right: move_on_word_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp RIGHT>;
+            label = "MOVE_ON_WORD_RIGHT";
+        };
+
         right_arrow_with_spaces: right_arrow_with_spaces {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -288,7 +302,7 @@
             bindings = <
   &hyper  &kp Q                &kp W                &kp E            &kp R              &kp T            &kp Y         &kp U               &kp I             &kp O             &kp P                    &hyper
   &meh    &hmr LEFT_CONTROL A  &hmr LEFT_ALT S      &hmr LEFT_GUI D  &hmr LEFT_SHIFT F  &kp G            &kp H         &hmr RIGHT_SHIFT J  &hmr RIGHT_GUI K  &hmr RIGHT_ALT L  &hmr RIGHT_CONTROL SEMI  &kp DOUBLE_QUOTES
-  &trans  &kp Z                &kp X                &kp C            &kp V              &kp B            &kp N         &kp M               &kp COMMA         &kp DOT           &hmr EXCL QUESTION       &kp BSLH
+  &meh    &kp Z                &kp X                &kp C            &kp V              &kp B            &kp N         &kp M               &kp COMMA         &kp DOT           &hmr EXCL QUESTION       &meh
 
                                &lt 1 ESCAPE         &lt 3 TAB        &lt 2 SPACE        &lt 5 RET        &lt 5 ESCAPE  &lt 2 RETURN        &lt 3 BACKSPACE   &lt 1 ESCAPE
             >;
@@ -305,10 +319,11 @@
 
         lower_layer {
             bindings = <
-  &none      &none   &none      &none       &none        &none        &none     &none   &none      &none   &none    &none
-  &none      &none   &none      &none       &none        &none        &none     &none   &none      &none   &none    &kp APOSTROPHE
-  &trans     &kp N1  &kp N2     &kp N3      &kp N4       &kp N5       &kp N6    &kp N7  &kp N8     &kp N9  &kp N0   &none
-                     &trans     &lt 4 TAB   &trans       &trans       &trans    &trans  &lt 4 DEL  &none
+  &none      &none   &none      &none       &none        &none          &none                  &none   &none                  &none                 &none    &none
+  &none      &none   &none      &none       &none        &none          &move_on_word_left     &none   &none                  &move_on_word_right   &none    &kp APOSTROPHE
+  &trans     &kp N1  &kp N2     &kp N3      &kp N4       &kp N5         &kp N6                 &kp N7  &kp N8                 &kp N9                &kp N0   &none
+
+                     &trans     &lt 4 TAB   &trans       &trans         &trans    &trans  &lt 4 DEL  &none
             >;
         };
 
