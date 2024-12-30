@@ -344,7 +344,7 @@
 
         lower_layer {
             bindings = <
-  &none      &none   &none      &none       &none        &none          &remove_word           &none   &none                  &none                 &none    &none
+  &none      &none   &none      &none       &none        &none          &remove_word           &none   &le                    &ge                   &none    &none
   &none      &none   &none      &none       &none        &none          &move_on_word_left     &none   &none                  &move_on_word_right   &none    &kp APOSTROPHE
   &trans     &kp N1  &kp N2     &kp N3      &kp N4       &kp N5         &kp N6                 &kp N7  &kp N8                 &kp N9                &kp N0   &none
 
