@@ -98,14 +98,14 @@
         move_on_word_left: move_on_word_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT>;
             label = "MOVE_ON_WORD_LEFT";
         };
 
         move_on_word_right: move_on_word_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp RIGHT>;
+            bindings = <&kp LEFT_CONTROL &kp RIGHT>;
             label = "MOVE_ON_WORD_RIGHT";
         };
 
