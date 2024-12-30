@@ -54,8 +54,8 @@
 
         COMBO(minus_with_spaces, &minus_with_spaces, <15 19>, <0>, COMBO_TERM_LONG)
 
-        //COMBO(lpar, &kp KP_LEFT_PARENTHESIS, <19 20>, <0>, COMBO_TERM_LONG)
-        COMBO(rpar, &kp RPAR, <20 21>, <0>, COMBO_TERM_LONG)
+        COMBO(lpar, &kp LPAR, <7 8>, <0>, COMBO_TERM_LONG)
+        COMBO(rpar, &kp RPAR, <8 9>, <0>, COMBO_TERM_LONG)
 
         COMBO(change_language, &kp CAPSLOCK, <38 41>, <0>, COMBO_TERM_LONG)
         COMBO(bracket, &kp LEFT_BRACKET, <31 32>, <0>, COMBO_TERM_LONG)
@@ -80,12 +80,6 @@
         COMBO(gravis, &kp GRAVE, <13 25>, <0>, COMBO_TERM_LONG)
         COMBO(ground, &kp UNDERSCORE, <18 30>, <0>, COMBO_TERM_LONG)
         COMBO(excl, &kp EXCL, <1 13>, <0>, COMBO_TERM_LONG)
-
-        left_par {
-            bindings = <&kp LPAR>;
-            key-positions = <19 20>;
-            layers = <0>;
-        };
     };
 
     macros {
