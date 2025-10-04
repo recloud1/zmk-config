@@ -284,31 +284,31 @@
             label = "AND";
         };
 
-        hyper: hyper {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                HYPER,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                HYPER;
-
-            label = "HYPER_MACRO";
-        };
-
-        meh: meh {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                MEH,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                MEH;
-
-            label = "MEH_MACRO";
-        };
+        /* hyper: hyper { */
+        /*     compatible = "zmk,behavior-macro"; */
+        /*     #binding-cells = <0>; */
+        /*     bindings = */
+        /*         <&macro_press>, */
+        /*         HYPER, */
+        /*         <&macro_pause_for_release>, */
+        /*         <&macro_release>, */
+        /*         HYPER; */
+        /**/
+        /*     label = "HYPER_MACRO"; */
+        /* }; */
+        /**/
+        /* meh: meh { */
+        /*     compatible = "zmk,behavior-macro"; */
+        /*     #binding-cells = <0>; */
+        /*     bindings = */
+        /*         <&macro_press>, */
+        /*         MEH, */
+        /*         <&macro_pause_for_release>, */
+        /*         <&macro_release>, */
+        /*         MEH; */
+        /**/
+        /*     label = "MEH_MACRO"; */
+        /* }; */
     };
 
     behaviors {
